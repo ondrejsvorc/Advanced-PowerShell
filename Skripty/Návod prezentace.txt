@@ -1,0 +1,13 @@
+1. Zapnout Windows 10 klient + Server 2022 (obojí Vnitřní síť)
+2. Server - pustit INICIALIZAČNÍ SKRIPT
+3. Klient - pustit WINDOWS CLIENT (v privilegovaném režimu)
+4. Přesunout PC1 do organizační jednotky U1
+!!!! 5. Na klientovi Enable-PSRemoting –Force (v privilegovaném režimu)
+6. Na klientovi i na serveru Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
+7. Nainstalovat na klientovi PowerShell Core 7 kvůli skriptu Vytváření uživatelů - konstrukce Foreach-Object -Parallel (pokud bude potřeba)
+8. Přemístit "ŠvorcI3B - PSRemoting" na disk E:\ a přejmenovat jej na "PSRemoting"
+9. Přemístit "ŠvorcI3B - Credential XML - získání" a spustit
+10. Přemístit "ŠvorcI3B - TaskScheduler PowerShell"
+11. Přihlásit se na klientovi na jakéhokoliv uživatele - třeba jan
+12. Potom spustit TaskScheduler PowerShell - upravit čas na nějaký vyhovující a ukázat, že se PC vypne (případně přepsat pwsh.exe na powershell.exe, pokud nebude k dispozici PowerShell 7)
+
